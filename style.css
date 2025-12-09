@@ -1,0 +1,79 @@
+/*Configuraçoes Basicas*/
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+main{
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0.1);
+}
+header,footer{
+    text-align: center;
+    padding: 15px,0;
+    background-color: #007bff;
+    color: white;
+}
+section{
+    margin-bottom:30px ;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+/*1.Estilizaçao de LISTAS*/
+
+.habilidades-lista{
+    list-style-type: none;/*Remove os marcadores de bolinha padrao*/
+    padding-left: 0;
+}
+.habilidades-lista li{
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border-left:  5px solid #007bff;/*Adiciona uma borda colorida a esquerda*/
+    transition: background-color 0.3s;
+}
+.habilidades-lista li:hover{
+    background-color: #cce5ff;
+}
+/*2.Estilizaçao de TABELAS*/
+.tabela-clientes{
+    width: 100%;
+    border-collapse: collapse;/*Remove o espaçamentos duplo entre as bordas das celulas*/
+    margin-top: 15px;
+}
+.tabela-clientes th, .tabela-clientes td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.tabela-clientes thead tr{
+    background-color: #007bff;
+    color: white;
+}
+/*Zebra Striping:Estiliza linhas pares*/
+.tabela-clientes tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+/*3.Estilizaçao de LINKS*/
+.links-sociais a{
+    text-decoration: none;/*Remove o sublinhado padrao*/
+    color: #007bff;/*Cor primaria*/
+    background-color: #fff;
+    padding: 8px 15px;
+    border: 1px solid #007bff;
+    border-radius: 20px/*transforma o link em um"botao" arredondado*/;
+    margin-right: 10px;
+    display: inline-block;/*permite definir padding e margin*/
+    transition: background-color 0.3s,color 0.3s;
+}
+.links-sociais a:hover{
+    background-color: #007bff;/*inverte as cores ao passar o mouse*/
+    color: white;
+    box-shadow:0 2px 5px rgba(0,123, 225, 0.5);
+}
